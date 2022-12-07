@@ -42,3 +42,4 @@ Trying different things with go
     -   Named returns
     -   Function as value
     -   Function closure
+    -   Methods or Function with a receiver argument
