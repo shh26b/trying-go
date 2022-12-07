@@ -15,6 +15,30 @@ Trying different things with go
     -   Constants
 -   Control Flow
     -   For loop
+    -   If else
+    -   If with short statement
+    -   Switch statement
+    -   Switch with no Condition
+    -   range keyword
+-   Defer
+    -   Multiple defer
+-   Pointers
+-   Struct
+-   Arrays and Slices
+    -   Array
+    -   Slices
+    -   Slice pointer
+    -   Slice literals
+    -   Slice bound
+    -   Slice len and cap
+    -   nil slice
+    -   Slice with make()
+    -   append() function
+-   Maps
+    -   Map literals
+    -   Mutating map
 -   Functions
     -   Multiple returns
     -   Named returns
+    -   Function as value
+    -   Function closure
