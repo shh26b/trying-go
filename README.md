@@ -43,3 +43,6 @@ Trying different things with go
     -   Function as value
     -   Function closure
     -   Methods or Function with a receiver argument
+    -   Pointer receiver
+    -   Methods and pointer indirection in pointer receiver argument
+    -   Methods and pointer indirection in value receiver argument
