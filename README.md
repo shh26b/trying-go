@@ -46,3 +46,10 @@ Trying different things with go
     -   Pointer receiver
     -   Methods and pointer indirection in pointer receiver argument
     -   Methods and pointer indirection in value receiver argument
+-   Interface
+    -   Interface values
+    -   Nil interface
+    -   Empty interface
+    -   Type assertion, Type switches
+    -   fmt Stringer interface
+    -   error interface
