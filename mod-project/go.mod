@@ -1,4 +1,4 @@
-module github.com/shh26b/go-practice/mod-project
+module github.com/shh26b/trying-go/mod-project
 
 go 1.19
 

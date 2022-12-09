@@ -1,4 +1,4 @@
-# go-practice
+# trying-go
 
 Trying different things with go
 
