@@ -1,4 +1,4 @@
-package a_our_exercises
+package main
 
 import (
 	"fmt"

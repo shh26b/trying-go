@@ -1,4 +1,4 @@
-package a_our_exercises
+package main
 
 func Pic(dx, dy int) [][]uint8 {
 	ss := make([][]uint8, dy)
