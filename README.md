@@ -53,3 +53,7 @@ Trying different things with go
     -   Type assertion, Type switches
     -   fmt Stringer interface
     -   error interface
+
+## What I learned in Just For Func
+
+-   10: implementing the context package
