@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>todos - Todos</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            teal: "#4DC0B5",
+                            green: "#38C172",
+                            red: "#E3342F",
+                            grey: "#9BABB4",
+                            "grey-darkest": "#2F3B40",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+
+    <body
+        class="h-screen bg-[#edf2f7] overflow-hidden flex items-center justify-center"
+    >
+        <div
+            class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans"
+        >
+            <div class="bg-white rounded shadow p-6 m-4 w-full lg:w-3/4">
+                <div class="mb-4">
+                    <h1 class="text-grey-darkest text-5xl">Todo List</h1>
+                    <div class="flex mt-4">
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker"
+                            placeholder="Add Todo"
+                            id="todo-input"
+                            name="todo"
+                        />
+                        <button
+                            class="flex shrink-0 p-2 border-2 rounded text-teal border-teal hover:text-white hover:bg-teal"
+                            id="todo-button"
+                        >
+                            Add
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    {{ range.Todos }}
+                    <div class="flex mb-4 items-center">
+                        {{if .IsCompleted}}
+                        <p class="w-full text-grey-darkest">{{.Content}}</p>
+                        <button
+                            class="flex shrink-0 p-2 ml-4 mr-2 border-2 rounded hover:text-white text-green border-green hover:bg-green"
+                        >
+                            Done
+                        </button>
+                        {{else}}
+                        <p class="w-full line-through text-green">
+                            {{.Content}}
+                        </p>
+                        <button
+                            class="flex shrink-0 p-2 ml-4 mr-2 border-2 rounded hover:text-white text-grey border-grey hover:bg-grey"
+                        >
+                            Not Done
+                        </button>
+                        {{ end }}
+                        <button
+                            class="flex shrink-0 p-2 ml-2 border-2 rounded text-red border-red hover:text-white hover:bg-red"
+                        >
+                            Remove
+                        </button>
+                    </div>
+                    {{else}}
+                    <h2>The todos is empty</h2>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <script>
+            console.log("Here");
+            const input = document.querySelector("#todo-input");
+            const add = document.querySelector("#todo-button");
+
+            const handleAddTodo = async () => {
+                try {
+                    const response = await fetch("/todos", {
+                        method: "POST",
+                        body: JSON.stringify({ todo: input.value }),
+                    });
+                    console.log(response);
+                    // location.reload();
+                } catch (error) {
+                    console.error("Error:", error);
+                }
+            };
+
+            add.addEventListener("click", handleAddTodo);
+            input.addEventListener("keypress", e => {
+                if (e.key === "Enter") {
+                    add.click();
+                }
+            });
+        </script>
+    </body>
+</html>
