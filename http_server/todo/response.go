@@ -2,13 +2,13 @@ package todo
 
 import "fmt"
 
-type todo struct {
+type Todo struct {
 	Id          string
 	Content     string
 	IsCompleted bool
 }
 
-func (t *todo) String() string {
+func (t *Todo) String() string {
 	return fmt.Sprintf(
 		`{
 			"id": "%v",

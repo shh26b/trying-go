@@ -26,3 +26,17 @@ func Render(w *http.ResponseWriter, file string, data interface{}) {
 	err = t.Execute(*w, data)
 	Fatal(err)
 }
+
+// func todoToJson(t todo) string {
+// 	return fmt.Sprintf("%v,", t.String())
+// }
+
+// func todosToJson(todos []todo) string {
+// 	l := len(todos)
+// 	s := "["
+// 	for _, todo := range todos[:l-1] {
+// 		s += todoToJson(todo)
+// 	}
+// 	s += fmt.Sprintf("\t%v]", todos[l-1].String())
+// 	return s
+// }
