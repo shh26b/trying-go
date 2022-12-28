@@ -1,4 +1,6 @@
 go.out
 .vscode
 *.out
+tmp.*
 tmp
+__debug_bin

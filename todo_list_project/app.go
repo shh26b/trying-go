@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/shh26b/trying-go/todo_list_project/core"
-	"github.com/shh26b/trying-go/todo_list_project/todo"
+	"github.com/shh26b/go-code/todo_list_project/core"
+	"github.com/shh26b/go-code/todo_list_project/todo"
 )
 
 func HomeHandler(ctx *gin.Context) {

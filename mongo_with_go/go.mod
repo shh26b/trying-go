@@ -1,4 +1,4 @@
-module github.com/shh26b/trying-go/mongo_with_go
+module github.com/shh26b/go-code/mongo_with_go
 
 go 1.19
 

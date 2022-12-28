@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/shh26b/trying-go/http_server/utils"
+	"github.com/shh26b/go-code/http_server/utils"
 )
 
 type TodoHandler struct {

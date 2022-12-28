@@ -1,4 +1,4 @@
-# trying-go
+# go-code
 
 Trying different things with go
 

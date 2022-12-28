@@ -1,4 +1,4 @@
-module github.com/shh26b/trying-go/todo_list_project
+module github.com/shh26b/go-code/todo_list_project
 
 go 1.19
 

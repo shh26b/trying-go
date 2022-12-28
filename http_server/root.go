@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/shh26b/trying-go/http_server/todo"
+	"github.com/shh26b/go-code/http_server/todo"
 )
 
 type RootHandler struct {

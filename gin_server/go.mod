@@ -1,4 +1,4 @@
-module github.com/shh26b/trying-go/gin_server
+module github.com/shh26b/go-code/gin_server
 
 go 1.19
 

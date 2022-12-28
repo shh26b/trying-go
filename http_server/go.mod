@@ -1,3 +1,3 @@
-module github.com/shh26b/trying-go/http_server
+module github.com/shh26b/go-code/http_server
 
 go 1.19

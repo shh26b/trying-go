@@ -1,4 +1,4 @@
-module github.com/shh26b/trying-go/go_web_examples
+module github.com/shh26b/go-code/go_web_examples
 
 go 1.19
 
